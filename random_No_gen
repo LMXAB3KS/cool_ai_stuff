@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cstdlib>  // for rand() and srand()
+#include <ctime>    // for time()
+
+int main()
+{
+    // Seed the random number generator with the current time
+    srand(time(nullptr));
+
+    // Generate a random number between 1 and 10
+    int randomNumber = rand() % 10 + 1;
+
+    std::cout << "Random number: " << randomNumber << std::endl;
+
+    return 0;
+}
